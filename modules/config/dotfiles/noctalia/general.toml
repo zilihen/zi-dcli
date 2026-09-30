@@ -1,0 +1,161 @@
+[shell.animation]
+speed = 2
+
+[shell.screenshot]
+save_to_file = false
+directory = "~/Pictures/Screenshots"
+copy_to_clipboard = true
+freeze_screen = true
+show_cursor = true
+annotate = true
+close_on_copy = true
+close_on_save = true
+# pipe_to_command = true
+# pipe_command = "satty -f - -o '~/Pictures/Screenshots/screenshot_%Y%m%d_%H%M%S.png'"
+
+[shell.panel]
+transparency_mode = "solid"
+control_center_placement = "floating"
+open_near_click_control_center = true
+wallpaper_placement = "floating"
+
+
+[osd]
+position = "bottom_center" 
+
+[location]
+auto_locate = true
+
+[lockscreen]
+enabled = true
+lock_before_suspend = true
+
+[lockscreen_widgets]
+enabled = true
+widget_order = [
+    "lockscreen-login-box@FALLBACK",
+    "lockscreen-login-box@eDP-1",
+    "clock_main"
+]
+
+[lockscreen_widgets.widget.clock_main]
+box_height = 0.0
+box_width = 0.0
+cx = 1128.0
+cy = 565.0
+output = "eDP-1"
+placement_height = 1504.0
+placement_width = 2256.0
+rotation = 0.0
+type = "clock"
+
+[lockscreen_widgets.widget.clock_main.settings]
+background = true
+background_color = "surface"
+background_opacity = 0.0
+background_padding = 10
+background_radius = 12
+center_text = true
+circle = true
+clock_style = "digital"
+color = "on_surface"
+font_family = ""
+format = "{:%H:%M}"
+shadow = true
+timezone = ""
+
+[lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+box_height = 70.0
+box_width = 400.0
+cx = 1128.0
+cy = 752.0
+output = "eDP-1"
+placement_height = 1504.0
+placement_width = 2256.0
+rotation = 0.0
+type = "login_box"
+
+[lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+background_color = "surface_variant"
+background_opacity = 0.88
+background_radius = 32.0
+center_password_text = true
+input_opacity = 1.0
+input_radius = 32.0
+layout = "compact"
+show_caps_lock = true
+show_keyboard_layout = true
+show_login_button = true
+show_media = true
+show_session_buttons = true
+show_unlock_hint = true
+show_weather = true
+
+[lockscreen_widgets.widget."lockscreen-login-box@FALLBACK"]
+box_height = 70.0
+box_width = 400.0
+cx = 1128.0
+cy = 752.0
+output = "FALLBACK"
+placement_height = 1504.0
+placement_width = 2256.0
+rotation = 0.0
+type = "login_box"
+
+[lockscreen_widgets.widget."lockscreen-login-box@FALLBACK".settings]
+background_color = "surface_variant"
+background_opacity = 0.88
+background_radius = 32.0
+center_password_text = true
+input_opacity = 1.0
+input_radius = 32.0
+layout = "compact"
+show_caps_lock = true
+show_keyboard_layout = true
+show_login_button = true
+show_media = true
+show_session_buttons = true
+show_unlock_hint = true
+show_weather = true
+
+[control_center]
+sidebar = "full"
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "notification"
+
+[[control_center.shortcuts]]
+type = "audio"
+
+[[control_center.shortcuts]]
+type = "system"
+
+[[control_center.shortcuts]]
+type = "clipboard"
+
+[system.monitor]
+enabled = true
+
+[idle]
+behavior_order = ["lock", "screen-off", "suspend"]
+pre_action_fade_seconds = 2.0
+
+[idle.behavior.lock] 
+timeout = 300
+action = "lock" 
+enabled = true
+
+[idle.behavior.screen-off]
+timeout = 360
+action = "screen_off" 
+enabled = true
+
+[idle.behavior.suspend]
+timeout = 1200
+action = "lock_and_suspend"

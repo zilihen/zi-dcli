@@ -1,0 +1,76 @@
+[bar.default]
+position = "top"
+background_opacity = 0
+radius = 0
+radius_bottom_left = 12
+radius_bottom_right = 12
+
+margin_ends = 0
+capsule = true
+
+capsule_foreground = "#FFFFFF"
+capsule_fill = "#000000"
+
+start = ["media", "active_window"]
+center = ["tray", "screenshot", "group:middle"]
+end = ["battery", "keyboard_layout"]
+
+# start = ["control-center", "weather", "wallpaper", "media", "active_window"]
+# center = ["group:middle"]
+# end = ["tray", "group:misc", "group:info", "group:status", "session"]
+
+[[bar.default.capsule_group]]
+id = "middle"
+enabled = true
+members = ["clock", "workspaces"]
+fill = "#000000"
+
+[[bar.default.capsule_group]]
+id = "status"
+enabled = true
+members = ["volume", "network", "bluetooth", "battery"]
+fill = "#000000"
+
+[[bar.default.capsule_group]]
+id = "info"
+enabled = true
+members = ["notifications", "clipboard", "screenshot"]
+fill = "#000000"
+
+[[bar.default.capsule_group]]
+id = "misc"
+enabled = true
+members = ["lock_keys", "keyboard_layout"]
+fill = "#000000"
+
+[widget.bluetooth]
+color = "#08d7f7"
+
+[widget.volume]
+color = "#08f744"
+
+[widget.session]
+color = "#fb1c32"
+
+[widget.network]
+color = "#ebf708"
+
+[widget.battery]
+color = "#34f708"
+
+[widget.workspaces]
+focused_color = "#e3a81d"
+
+[widget.lock_keys]
+hide_when_off = true
+
+[widget.media]
+hide_when_no_media = false
+title_scroll = "always"
+color = "#c60ef4"
+
+[widget.weather]
+color = "#0ad2ff"
+
+[widget.control-center]
+background_opacity = 1

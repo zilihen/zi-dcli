@@ -1,0 +1,6 @@
+host: cachy-station
+description: Personal Machine
+import: []
+enabled_modules:
+- gaming
+- vm/docker

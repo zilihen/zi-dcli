@@ -1,0 +1,61 @@
+[styling]
+scale = 1
+
+[styling.palette]
+bg = "#1a1b26"
+surface = "#000000"
+elevated = "#000000"
+
+fg = "#c0caf5"
+fg_muted = "#9aa5ce"
+
+primary = "#7aa2f7"
+
+red = "#f7768e"
+yellow = "#e0af68"
+green = "#9ece6a"
+blue = "#7aa2f7"
+
+[bar]
+scale = 0.75
+background-opacity = 0
+rounding = "full"
+
+button-rounding = "full"
+button-group-rounding = "full"
+button-variant = "basic"
+button-bg-opacity = 100
+button-icon-size = 1
+button-label-size = 1
+
+
+[[bar.layout]]
+monitor = "*"
+left = ["hyprland-workspaces", "media", "window-title"]
+center = ["weather", "clock", "dashboard"]
+right = [
+    "systray",
+    { name = "SystemInfo", modules = ["cpu", "ram", "storage"]},
+    { name = "status", modules = [ "volume", "microphone", "network", "bluetooth", "battery"] },
+    "notifications"
+    ]
+
+
+# can configure monitor wallpaper through this if wanted
+[wallpaper]
+engine-enabled = true
+
+[modules.hyprland-workspaces]
+label-size = 1
+
+[modules.window-title]
+format = "{{ app }}"
+
+[modules.dashboard]
+icon-color = "#009C08"
+
+[modules.ram]
+format = "{{ used_gib }}/{{ total_gib }} GiB"
+
+[modules.cpu]
+format = "{{ percent }}% {{ temp_c }}C"

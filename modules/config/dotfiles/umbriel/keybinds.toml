@@ -1,0 +1,94 @@
+[keybinds]
+# Launch Applications/Commands
+"Mod+Return" = "spawn:foot"
+"Mod+E" = "spawn:thunar"
+"Mod" = "spawn:noctalia msg panel-toggle launcher"
+"Mod+Space" = "spawn:noctalia msg panel-toggle control-center"
+"Mod+L" = "spawn:noctalia msg session lock"
+"Mod+W" = "spawn:noctalia msg panel-toggle wallpaper"
+"Mod+V" = "spawn:noctalia msg panel-toggle clipboard"
+
+"Print" = "spawn:noctalia msg screenshot-region"
+
+# Window Management
+"Mod+Q" = "window-close"
+"Mod+F" = "window-toggle-fullscreen"
+"Mod+M" = "window-toggle-maximize-to-edges"
+"Mod+C" = "window-center"
+"Mod+CTRL+Space" = "window-toggle-floating"
+"Alt+Tab" = "spawn:noctalia msg window-switcher"
+
+"Mod+Left" = "window-focus-left"
+"Mod+Right" = "window-focus-right"
+"Mod+Up" = "window-focus-up"
+"Mod+Down" = "window-focus-down"
+"Mod+WheelUp" = "window-focus-left"
+"Mod+WheelDown" = "window-focus-right"
+
+"Mod+Equal" = "window-modify-primary-extent:0.01" # Increase the width of the window
+"Mod+Minus" = "window-modify-primary-extent:-0.01" # Decrease the width of the window
+"Mod+Shift+Equal" = "window-modify-secondary-extent:0.01" # Increase the height of the window
+"Mod+Shift+Minus" = "window-modify-secondary-extent:-0.01" # Decrease the height of the window
+
+"Mod+Ctrl+Left" = "window-move-or-output-left"
+"Mod+Ctrl+Right" = "window-move-or-output-right"
+"Mod+Ctrl+Up" = "window-move-or-output-up"
+"Mod+Ctrl+Down" = "window-move-or-output-down"
+
+# Workspace Management
+"Super+Tab" = "overview-toggle"
+"Mod+1" = "workspace-switch:1"
+"Mod+2" = "workspace-switch:2"
+"Mod+3" = "workspace-switch:3"
+"Mod+4" = "workspace-switch:4"
+"Mod+5" = "workspace-switch:5"
+"Mod+6" = "workspace-switch:6"
+"Mod+7" = "workspace-switch:7"
+"Mod+8" = "workspace-switch:8"
+"Mod+9" = "workspace-switch:9"
+
+"Mod+Ctrl+1" = "window-move-to-workspace-silent:1"
+"Mod+Ctrl+2" = "window-move-to-workspace-silent:2"
+"Mod+Ctrl+3" = "window-move-to-workspace-silent:3"
+"Mod+Ctrl+4" = "window-move-to-workspace-silent:4"
+"Mod+Ctrl+5" = "window-move-to-workspace-silent:5"
+"Mod+Ctrl+6" = "window-move-to-workspace-silent:6"
+"Mod+Ctrl+7" = "window-move-to-workspace-silent:7"
+"Mod+Ctrl+8" = "window-move-to-workspace-silent:8"
+"Mod+Ctrl+9" = "window-move-to-workspace-silent:9"
+
+# Laptop controls; noctalia shell integrated
+
+# Volume and brightness control
+"XF86AudioRaiseVolume" = { action = "spawn:noctalia msg volume-up", allow_when_locked = true }
+"XF86AudioLowerVolume" = { action = "spawn:noctalia msg volume-down", allow_when_locked = true }
+"XF86AudioMute" = { action = "spawn:noctalia msg volume-mute", allow_when_locked = true }
+"XF86AudioMicMute" = { action = "spawn:noctalia msg mic-mute", allow_when_locked = true }
+"XF86MonBrightnessUp" = { action = "spawn:noctalia msg brightness-up", allow_when_locked = true }
+"XF86MonBrightnessDown" = { action = "spawn:noctalia msg brightness-down", allow_when_locked = true }
+
+# Media control
+"XF86AudioPlay" = "spawn:noctalia msg media toggle"
+"XF86AudioNext" = "spawn:noctalia msg media next"
+"XF86AudioPrev" = "spawn:noctalia msg media previous"
+
+
+
+
+# Normal control if not using noctalia
+
+# Laptop volume and brightness control stuff
+# "XF86AudioRaiseVolume" = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
+# "XF86AudioLowerVolume" = "spawn:wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+# "XF86AudioMute" = "spawn:wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+# "XF86AudioMicMute" = "spawn:wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+# "XF86MonBrightnessUp" = "spawn:brightnessctl set +5%"
+# "XF86MonBrightnessDown" = "spawn:brightnessctl set 5%-"
+
+# Media Control
+# "XF86AudioPlay" = "spawn:playerctl play-pause"
+# "XF86AudioNext" = "spawn:playerctl next"
+# "XF86AudioPrev" = "spawn:playerctl previous"
+
+
+

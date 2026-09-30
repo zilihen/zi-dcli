@@ -1,0 +1,92 @@
+[include]
+files = [ 
+    "keybinds.toml"
+]
+
+[environment]
+ELECTRON_OZONE_PLATFORM_HINT = "wayland"
+QT_QPA_PLATFORMTHEME = "qt6ct"
+
+[general]
+autostart = ["noctalia"]
+mod_key = "Super"
+xwayland = true
+show_cheatsheet = false
+
+# Misc
+[hot_corners.top_left]
+enabled = true
+delay_ms = 250
+action = "overview-open"
+
+[layout]
+mode = "dwindle"
+
+[animation]
+enabled = true
+
+[input.cursor]
+theme = "Adwaita"
+size = 24
+follows_focus = false
+hide_when_typing = false
+
+[input.keyboard]
+layout = "us"
+repeat_rate = 25
+repeat_delay = 250
+numlock_toggle = true
+
+[input.touchpad]
+natural_scroll = true
+tap = true
+accel_profile = "custom 0.2144477506 0.000 0.307 0.615 1.077 1.539 2.002 2.505 3.208 3.910 4.613 5.315 6.018 6.720 7.423 8.125 8.828 9.530 10.233 10.935 12.387"
+click_method = "clickfinger"
+
+[input.mouse] 
+accel_profile = "custom 0.2144477506 0.000 0.307 0.615 1.077 1.539 2.002 2.505 3.208 3.910 4.613 5.315 6.018 6.720 7.423 8.125 8.828 9.530 10.233 10.935 12.387"
+
+[input.focus]
+follows_mouse = true
+
+[output.eDP-1]
+mode = "2256x1504@60"
+position = [0, 0]
+scale = 1
+vrr = "always"
+min_workspaces = 5
+workspace_axis = "horizontal"
+
+[[window_rule]]
+match.app_id = "(steam)|(.*PrismLauncher)"
+default_workspace = 4
+default_focused = false
+
+[[window_rule]]
+match.app_id = "discord"
+default_workspace = 1
+default_focused = false
+
+[[window_rule]]
+match.content_type = "game"
+vrr = "always"
+
+[[window_rule]]
+match.app_id = "^steam_app_[0-9]*$"
+default_focused = false 
+default_workspace = 5
+hdr = "fullscreen"
+
+[[window_rule]]
+match.app_id = "satty"
+default_floating = true
+default_focused = false 
+default_floating_size = { width = 0.5, height = 0.6 }
+
+[[window_rule]]
+match.app_id = "[Tt]hunar"
+default_floating = true
+default_focused = false 
+default_floating_size = { width = 0.5, height = 0.6 }
+
+
