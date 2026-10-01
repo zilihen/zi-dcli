@@ -31,11 +31,7 @@ local packages = {
 }
 
 local services = {
-    enabled = { 
-        "NetworkManager", 
-        "bluetooth", 
-        "cups",
-    },
+    enabled = {},
     disabled = {},
 }
 
@@ -54,22 +50,4 @@ return {
     description = "Default System Settings",
     packages = packages,
     services = services,
-
-    -- Settings
-    flatpak_scope = "user",
-    auto_prune = false,
-    module_processing = "parallel",
-
-    default_apps = {
-        terminal = "foot",
-    },
-
-    system_backups = {
-        enabled = true,
-        backup_on_sync = true,
-        backup_on_update = true,
-        tool = "timeshift",
-        snapper_config = "root",
-        max_backups = 5,
-    },
 }

@@ -3,9 +3,6 @@ return {
 
     packages = { 
         "docker",
-    },
-
-    services = { 
-        enabled = { "docker" },
+        "docker-compose",
     },
 }

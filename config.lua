@@ -8,12 +8,21 @@ local enabled_modules = {
     "hardware",
     "config",
     "vm/docker",
+    "vm/winapps",
 }
 
 local services = {
-    enabled = {},
+    enabled = { 
+        "NetworkManager", 
+        "bluetooth", 
+        "cups",
+    },
     disabled = {},
 }
+
+if dcli.util.contains(enabled_modules, "vm/docker") then 
+    table.insert(services.enabled, "docker")
+end
 
 -- Active host
 return {
@@ -21,4 +30,22 @@ return {
     services = services,
     enabled_modules = enabled_modules,
     package_manager = "pacman",
+    
+     -- Settings
+    flatpak_scope = "user",
+    auto_prune = false,
+    module_processing = "parallel",
+
+    default_apps = {
+        terminal = "foot",
+    },
+
+    system_backups = {
+        enabled = true,
+        backup_on_sync = true,
+        backup_on_update = true,
+        tool = "timeshift",
+        snapper_config = "root",
+        max_backups = 5,
+    },
 }
