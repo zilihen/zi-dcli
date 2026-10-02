@@ -3,6 +3,7 @@ return {
     packages = {
         "noctalia", 
         "umbriel", 
-        "xwayland-satellite"
+        "xwayland-satellite",
+        "foot",
     },
 }

@@ -1,0 +1,9 @@
+theme = "tokyonight"
+
+[editor]
+mouse = true
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
