@@ -1,13 +1,13 @@
-return { 
-    description = "configurating Development tools"
-    packages = { 
-        -- python
-        "python", 
-        "python-pip",
+return {
+  description = "configurating Development tools",
+  packages = {
+    -- python
+    "python",
+    "python-pip",
 
-        -- C/C++
-        "gcc", 
-        "gdb", 
-        "make"
-    }
+    -- C/C++
+    "gcc",
+    "gdb",
+    "make"
+  },
 }
