@@ -44,6 +44,6 @@ return {
     backup_on_update = true,
     tool = "timeshift",
     snapper_config = "root",
-    max_backups = 5,
+    max_backups = 3,
   },
 }

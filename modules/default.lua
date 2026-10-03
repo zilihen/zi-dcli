@@ -24,6 +24,8 @@ local packages = {
 
   -- gaming
   "steam",
+  "gamescope",
+  "lib32-gamescope",
   "protonplus",
   "prismlauncher",
 }
