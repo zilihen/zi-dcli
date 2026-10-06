@@ -1,4 +1,6 @@
-theme = "tokyonight"
+theme = "vim_dark_high_contrast"
+# theme = "ayu_evolve"
+# theme = "ao"
 
 [editor]
 mouse = true
