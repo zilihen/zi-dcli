@@ -3,7 +3,7 @@ theme = "vim_dark_high_contrast"
 # theme = "ao"
 
 [editor]
-mouse = true
+mouse = false
 
 [editor.cursor-shape]
 normal = "block"
