@@ -26,10 +26,6 @@ position = "bottom_center"
 [location]
 auto_locate = true
 
-[lockscreen]
-enabled = true
-lock_before_suspend = true
-
 [lockscreen_widgets]
 enabled = true
 widget_order = [
@@ -142,6 +138,10 @@ type = "clipboard"
 [system.monitor]
 enabled = true
 
+[lockscreen]
+enabled = true
+lock_before_suspend = true
+
 [idle]
 behavior_order = ["lock", "screen-off", "suspend"]
 pre_action_fade_seconds = 2.0
@@ -158,4 +158,4 @@ enabled = true
 
 [idle.behavior.suspend]
 timeout = 1200
-action = "suspend"
+action = "suspend" # since lock_before_suspend = true, this is equivalent to action = "lock_and_suspend"
