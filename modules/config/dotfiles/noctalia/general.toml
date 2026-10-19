@@ -158,4 +158,4 @@ enabled = true
 
 [idle.behavior.suspend]
 timeout = 1200
-action = "lock_and_suspend"
+action = "suspend"
