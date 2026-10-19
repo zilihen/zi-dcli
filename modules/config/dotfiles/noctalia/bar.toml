@@ -11,9 +11,9 @@ capsule = true
 capsule_foreground = "#FFFFFF"
 capsule_fill = "#000000"
 
-start = ["media", "active_window"]
-center = ["tray", "screenshot", "group:middle"]
-end = ["battery", "prponkshe/umbriel-displays:bar","andrewdems/printers:printer", "keyboard_layout"]
+start = ["launcher", "media", "active_window"]
+center = ["screenshot", "group:middle"]
+end = ["tray", "battery", "prponkshe/umbriel-displays:bar","andrewdems/printers:printer", "keyboard_layout"]
 
 # start = ["control-center", "weather", "wallpaper", "media", "active_window"]
 # center = ["group:middle"]
