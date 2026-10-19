@@ -1,6 +1,7 @@
 [include]
 files = [ 
-    "keybinds.toml"
+    "keybinds.toml",
+    "outputs.toml"
 ]
 
 [environment]
@@ -33,8 +34,8 @@ hide_when_typing = false
 
 [input.keyboard]
 layout = "us"
-repeat_rate = 25
-repeat_delay = 250
+repeat_rate = 30
+repeat_delay = 150
 numlock_toggle = true
 
 [input.touchpad]
@@ -48,14 +49,6 @@ accel_profile = "custom 0.2144477506 0.000 0.307 0.615 1.077 1.539 2.002 2.505 3
 
 [input.focus]
 follows_mouse = true
-
-[output.eDP-1]
-mode = "2256x1504@60"
-position = [0, 0]
-scale = 1
-vrr = "always"
-min_workspaces = 5
-workspace_axis = "horizontal"
 
 [[window_rule]]
 match.app_id = "(steam)|(.*PrismLauncher)"

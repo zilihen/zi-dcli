@@ -1,0 +1,6 @@
+[plugins]
+enabled = ["andrewdems/printers", "prponkshe/umbriel-displays"]
+
+[plugin_settings."andrewdems/printers"]
+show_when_idle = true
+

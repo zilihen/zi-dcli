@@ -2,10 +2,10 @@
 enable = true
 fill_mode = "crop"
 
-directory = "~/zi-dots/wallpapers"
+directory = "~/.config/dcli/wallpapers"
 
 [wallpaper.default]
-path = "~/zi-dots/wallpapers/purple_night.jpg"
+path = "~/.config/dcli/purple_night.jpg"
 
 [theme]
 builtin = "Tokyo-Night"
