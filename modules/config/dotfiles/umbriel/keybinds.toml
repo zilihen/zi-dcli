@@ -16,7 +16,7 @@
 "Mod+M" = "window-toggle-maximize-to-edges"
 "Mod+C" = "window-center"
 "Mod+Space" = "window-toggle-floating"
-"Mod+Tab" = "spawn:noctalia msg window-switcher"
+"Alt+Tab" = "spawn:noctalia msg window-switcher"
 
 "Mod+Left" = "window-focus-left"
 "Mod+Right" = "window-focus-right"

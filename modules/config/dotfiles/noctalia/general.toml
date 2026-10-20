@@ -19,6 +19,8 @@ control_center_placement = "floating"
 open_near_click_control_center = true
 wallpaper_placement = "floating"
 
+[shell.window_switcher]
+style = "carousel"
 
 [osd]
 position = "bottom_center" 
