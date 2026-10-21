@@ -12,3 +12,4 @@ workspace_axis = "horizontal"
 
 [output."IPA E242 0000000000000"]
 position = [2256, 0]
+workspace_axis = "horizontal"

@@ -1,3 +1,6 @@
+[shell]
+polkit_agent = true
+
 [shell.animation]
 speed = 2
 

@@ -57,6 +57,12 @@
 "Mod+Ctrl+8" = "window-move-to-workspace-silent:8"
 "Mod+Ctrl+9" = "window-move-to-workspace-silent:9"
 
+# Submaps
+"Mod+S" = { action = "submap:gamemode", repeat = false }
+"submap[gamemode],Super+Tab" =  "overview-toggle"
+"submap[gamemode],Super" = "spawn:noctalia msg panel-toggle launcher"
+"submap[gamemode],Escape" = "submap:reset"
+
 # Laptop controls; noctalia shell integrated
 
 # Volume and brightness control
