@@ -86,3 +86,8 @@ default_floating_size = { width = 0.5, height = 0.6 }
 match.app_id = "dev.noctalia.UmbrielSharePicker"
 default_floating = true
 default_floating_size = { width = 0.5, height = 0.6}
+
+[[window_rule]]
+match.app_id = "(qalculate.*)"
+default_floating = true
+default_floating_size = { width = 0.5, height = 0.6}
