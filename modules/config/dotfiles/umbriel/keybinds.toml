@@ -1,7 +1,7 @@
 [keybinds]
 # Launch Applications/Commands
 "Mod+P" = "spawn foot"
-"Mod+E" = "spawn thunar"
+"Mod+E" = "spawn luciole"
 "Super" = "spawn noctalia msg panel-toggle launcher"
 "Super+Space" = "spawn noctalia msg panel-toggle control-center"
 "Mod+L" = "spawn noctalia msg session lock"

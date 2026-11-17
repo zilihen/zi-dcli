@@ -4,6 +4,8 @@ background_opacity = 0
 radius = 0
 radius_bottom_left = 12
 radius_bottom_right = 12
+reserve_space = false
+smart_auto_hide = true
 
 margin_ends = 0
 capsule = true
@@ -11,18 +13,24 @@ capsule = true
 capsule_foreground = "#FFFFFF"
 capsule_fill = "#000000"
 
-start = ["launcher", "media", "active_window"]
-center = ["screenshot", "group:middle"]
-end = ["tray", "battery", "prponkshe/umbriel-displays:bar","andrewdems/printers:printer", "keyboard_layout"]
+start = ["media", "active_window"]
+center = ["group:middle"]
+end = ["tray", "battery", "group:plugins", "keyboard_layout"]
 
 # start = ["control-center", "weather", "wallpaper", "media", "active_window"]
 # center = ["group:middle"]
 # end = ["tray", "group:misc", "group:info", "group:status", "session"]
 
 [[bar.default.capsule_group]]
+id = "plugins"
+enabled = true
+members = ["prponkshe/umbriel-displays:bar", "andrewdems/printers:printer"]
+fill = "#000000"
+
+[[bar.default.capsule_group]]
 id = "middle"
 enabled = true
-members = ["clock", "workspaces"]
+members = ["clock", "workspaces", "notifications"]
 fill = "#000000"
 
 [[bar.default.capsule_group]]
@@ -34,7 +42,7 @@ fill = "#000000"
 [[bar.default.capsule_group]]
 id = "info"
 enabled = true
-members = ["notifications", "clipboard", "screenshot"]
+members = ["clipboard", "screenshot"]
 fill = "#000000"
 
 [[bar.default.capsule_group]]

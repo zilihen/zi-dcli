@@ -23,6 +23,7 @@ action = "overview-open"
 [layout]
 # mode = "dwindle"
 mode = "stacking"
+client_maximize = "edges"
 
 [appearance.title_bar]
 mode = "on"
