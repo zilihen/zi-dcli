@@ -8,6 +8,10 @@
 "Mod+W" = "spawn noctalia msg panel-toggle wallpaper"
 "Mod+V" = "spawn noctalia msg panel-toggle clipboard"
 
+# Mouse binds
+"Mod+WheelUp" = { action = "workspace-previous", cooldown_ms = 150 }
+"Mod+WheelDown" = { action = "workspace-next", cooldown_ms = 150 }
+
 "Print" = "spawn noctalia msg screenshot-region"
 
 # Window Management
@@ -22,8 +26,6 @@
 "Mod+Right" = "window-focus-right"
 "Mod+Up" = "window-focus-up"
 "Mod+Down" = "window-focus-down"
-"Mod+WheelUp" = "window-focus-left"
-"Mod+WheelDown" = "window-focus-right"
 
 "Mod+Equal" = "window-modify-primary-extent 0.01" # Increase the width of the window
 "Mod+Minus" = "window-modify-primary-extent -0.01" # Decrease the width of the window
@@ -37,6 +39,8 @@
 
 # Workspace Management
 "Super+Tab" = "overview-toggle"
+"Alt+BracketRight" = "workspace-next"
+"Alt+BracketLeft" = "workspace-previous"
 "Mod+1" = "workspace-switch 1"
 "Mod+2" = "workspace-switch 2"
 "Mod+3" = "workspace-switch 3"

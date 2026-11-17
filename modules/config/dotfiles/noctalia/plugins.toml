@@ -1,5 +1,5 @@
 [plugins]
-enabled = ["andrewdems/printers", "prponkshe/umbriel-displays"]
+enabled = ["andrewdems/printers", "prponkshe/umbriel-displays", "noctalia/notes"]
 
 [plugin_settings."andrewdems/printers"]
 show_when_idle = true
