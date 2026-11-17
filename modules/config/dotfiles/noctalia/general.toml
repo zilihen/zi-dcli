@@ -152,15 +152,15 @@ behavior_order = ["lock", "screen-off", "suspend"]
 pre_action_fade_seconds = 2.0
 
 [idle.behavior.lock] 
-timeout = 300
+timeout = 600
 action = "lock" 
 enabled = true
 
 [idle.behavior.screen-off]
-timeout = 360
+timeout = 720
 action = "screen_off" 
 enabled = true
 
 [idle.behavior.suspend]
-timeout = 1200
+timeout = 1500
 action = "suspend" # since lock_before_suspend = true, this is equivalent to action = "lock_and_suspend"
