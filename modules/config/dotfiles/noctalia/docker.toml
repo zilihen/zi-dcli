@@ -1,0 +1,17 @@
+[dock]
+enabled = true
+
+icon_shadow = false
+background_opacity = 0.9
+border_width = 2
+concave_edge_corners = false
+
+smart_auto_hide = true
+reserve_space = false
+layer = "top"
+
+show_dots = true
+
+launcher_position = "start"
+
+pinned = ["vscodium", "discord", "foot"]

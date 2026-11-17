@@ -21,7 +21,28 @@ delay_ms = 250
 action = "overview-open"
 
 [layout]
-mode = "dwindle"
+# mode = "dwindle"
+mode = "stacking"
+
+[appearance.title_bar]
+mode = "on"
+button_background = true
+button_glyph = "hover"
+
+[colors.title_bar]
+background = "#292933FF"
+background_unfocused = "#1A1A1FFF"
+text = "#E8E8EAFF"
+text_unfocused = "#8A8A92FF"
+close = "#FF6B6BFF"
+close_glyph = "#FFFFFF"
+close_glyph_hover = "#141419FF"
+maximize = "#7AA3FFFF"
+maximize_glyph = "#FFFFFF"
+maximize_glyph_hover = "#141419FF"
+minimize = "#FFD166FF"
+minimize_glyph = "#FFFFFF"
+minimize_glyph_hover = "#141419FF"
 
 [animation]
 enabled = true
@@ -34,8 +55,8 @@ hide_when_typing = false
 
 [input.keyboard]
 layout = "us"
-repeat_rate = 30
-repeat_delay = 150
+repeat_rate = 50
+repeat_delay = 250
 numlock_toggle = true
 
 [input.touchpad]
@@ -48,7 +69,7 @@ click_method = "clickfinger"
 accel_profile = "custom 0.2144477506 0.000 0.307 0.615 1.077 1.539 2.002 2.505 3.208 3.910 4.613 5.315 6.018 6.720 7.423 8.125 8.828 9.530 10.233 10.935 12.387"
 
 [input.focus]
-follows_mouse = "always"
+follows_mouse = "sloppy"
 
 [[window_rule]]
 match.app_id = "(steam)|(.*PrismLauncher)"
