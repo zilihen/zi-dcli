@@ -8,7 +8,7 @@ position = [0, 0]
 scale = 1
 vrr = "always"
 min_workspaces = 5
-workspace_axis = "horizontal"
+workspace_axis = "vertical"
 
 [output."IPA E242 0000000000000"]
 position = [2256, 0]

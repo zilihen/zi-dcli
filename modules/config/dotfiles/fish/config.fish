@@ -8,6 +8,7 @@ alias hx='helix'
 alias windows='docker compose --file ~/.config/dcli/modules/vm/winapps/compose.yaml'
 alias l='ll'
 alias code='vscodium'
+alias annotate='noctalia msg annotate'
 starship init fish | source
 
 if type -q opam

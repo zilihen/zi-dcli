@@ -22,7 +22,7 @@ action = "overview-open"
 
 [layout]
 # mode = "dwindle"
-mode = "stacking"
+mode = "scrolling"
 client_maximize = "edges"
 
 [appearance.title_bar]
@@ -70,11 +70,23 @@ click_method = "clickfinger"
 accel_profile = "custom 0.2144477506 0.000 0.307 0.615 1.077 1.539 2.002 2.505 3.208 3.910 4.613 5.315 6.018 6.720 7.423 8.125 8.828 9.530 10.233 10.935 12.387"
 
 [input.focus]
-follows_mouse = "sloppy"
+follows_mouse = "sloppy" # used only in non-stacking layout
+
+
+
+
+
+
+
+
+##############################
+#       Windows Rules        #
+##############################
+
 
 [[window_rule]]
 match.app_id = "(steam)|(.*PrismLauncher)"
-default_workspace = 4
+default_workspace = 1
 default_focused = false
 
 [[window_rule]]
@@ -84,22 +96,22 @@ default_focused = false
 
 [[window_rule]]
 match.content_type = "game"
+default_focused = false
+default_workspace = 2
+default_fullscreen = true
+hdr = "fullscreen"
 vrr = "always"
 
 [[window_rule]]
 match.app_id = "^steam_app_[0-9]*$"
 default_focused = false 
-default_workspace = 5
+default_workspace = 2
+default_fullscreen = true
 hdr = "fullscreen"
+vrr = "always"
 
 [[window_rule]]
-match.app_id = "satty"
-default_floating = true
-default_focused = false 
-default_floating_size = { width = 0.5, height = 0.6 }
-
-[[window_rule]]
-match.app_id = "[Tt]hunar"
+match.app_id = ".*luciole"
 default_floating = true
 default_focused = false 
 default_floating_size = { width = 0.5, height = 0.6 }

@@ -7,10 +7,17 @@
 "Mod+L" = "spawn noctalia msg session lock"
 "Mod+W" = "spawn noctalia msg panel-toggle wallpaper"
 "Mod+V" = "spawn noctalia msg panel-toggle clipboard"
+"Mod+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
+"Mod+SemiColon" = "window-cycle-primary-extent"
 
 # Mouse binds
 "Mod+WheelUp" = { action = "workspace-previous", cooldown_ms = 150 }
 "Mod+WheelDown" = { action = "workspace-next", cooldown_ms = 150 }
+"Mod+Ctrl+WheelUp" = "window-focus-left"
+"Mod+Ctrl+WheelDown" = "window-focus-right"
+"Mod+Shift+WheelUp" = "column-move-left"
+"Mod+Shift+WheelDown" = "column-move-right"
+"Mod+MouseMiddle" = "layout-scroll-drag"
 
 "Print" = "spawn noctalia msg screenshot-region"
 
@@ -20,17 +27,17 @@
 "Mod+M" = "window-toggle-maximize-to-edges"
 "Mod+C" = "window-center"
 "Mod+Space" = "window-toggle-floating"
-"Alt+Tab" = "spawn noctalia msg window-switcher"
+"Mod+Tab" = "spawn noctalia msg window-switcher"
 
 "Mod+Left" = "window-focus-left"
 "Mod+Right" = "window-focus-right"
 "Mod+Up" = "window-focus-up"
 "Mod+Down" = "window-focus-down"
 
-"Mod+Equal" = "window-modify-primary-extent 0.01" # Increase the width of the window
-"Mod+Minus" = "window-modify-primary-extent -0.01" # Decrease the width of the window
-"Mod+Shift+Equal" = "window-modify-secondary-extent 0.01" # Increase the height of the window
-"Mod+Shift+Minus" = "window-modify-secondary-extent -0.01" # Decrease the height of the window
+"Mod+Equal" = "window-modify-primary-extent 0.02" # Increase the width of the window
+"Mod+Minus" = "window-modify-primary-extent -0.02" # Decrease the width of the window
+"Mod+Ctrl+Equal" = "window-modify-secondary-extent 0.02" # Increase the height of the window
+"Mod+Ctrl+Minus" = "window-modify-secondary-extent -0.02" # Decrease the height of the window
 
 "Mod+Ctrl+Left" = "window-move-or-output-left"
 "Mod+Ctrl+Right" = "window-move-or-output-right"
