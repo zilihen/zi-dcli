@@ -35,8 +35,9 @@ return {
   flatpak_scope = "user",
   auto_prune = false,
   module_processing = "parallel",
+  aur_helper = "shelly",
 
-  editor = "helix",
+  editor = "vscodium",
 
   system_backups = {
     enabled = true,

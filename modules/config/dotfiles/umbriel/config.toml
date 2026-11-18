@@ -8,17 +8,24 @@ files = [
 ELECTRON_OZONE_PLATFORM_HINT = "wayland"
 QT_QPA_PLATFORMTHEME = "qt6ct"
 
+##############################
+#     General Settings       #
+##############################
+
 [general]
 autostart = ["noctalia"]
 mod_key = "Alt"
 xwayland = true
 show_cheatsheet = false
 
-# Misc
 [hot_corners.top_left]
 enabled = true
 delay_ms = 250
 action = "overview-open"
+
+##############################
+#  Appearance and Layout     #
+##############################
 
 [layout]
 # mode = "dwindle"
@@ -48,6 +55,12 @@ minimize_glyph_hover = "#141419FF"
 [animation]
 enabled = true
 
+
+
+##############################
+#            Input           #
+##############################
+
 [input.cursor]
 theme = "Adwaita"
 size = 24
@@ -70,12 +83,7 @@ click_method = "clickfinger"
 accel_profile = "custom 0.2144477506 0.000 0.307 0.615 1.077 1.539 2.002 2.505 3.208 3.910 4.613 5.315 6.018 6.720 7.423 8.125 8.828 9.530 10.233 10.935 12.387"
 
 [input.focus]
-follows_mouse = "sloppy" # used only in non-stacking layout
-
-
-
-
-
+follows_mouse = "off"
 
 
 
