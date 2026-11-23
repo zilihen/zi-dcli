@@ -4,6 +4,8 @@ background_opacity = 0
 radius = 0
 radius_bottom_left = 12
 radius_bottom_right = 12
+smart_auto_hide = false
+reserve_space = true
 
 margin_ends = 0
 capsule = true
