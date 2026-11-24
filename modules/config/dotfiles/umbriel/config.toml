@@ -37,6 +37,14 @@ mode = "on"
 button_background = true
 button_glyph = "hover"
 
+[appearance]
+prefer_no_csd = true
+border_width = 2
+outer_border_width = 0
+corner_radius = 10
+drag_opacity = 0.75
+opaque_fullscreen = true
+
 [colors.title_bar]
 background = "#292933FF"
 background_unfocused = "#1A1A1FFF"
@@ -94,7 +102,7 @@ follows_mouse = "off"
 
 [[window_rule]]
 match.app_id = "(steam)|(.*PrismLauncher)"
-default_workspace = 1
+default_workspace = 2
 default_focused = false
 
 [[window_rule]]
