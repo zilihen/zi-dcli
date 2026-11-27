@@ -115,6 +115,7 @@ match.content_type = "game"
 default_focused = false
 default_workspace = 2
 default_fullscreen = true
+default_floating = true
 hdr = "fullscreen"
 vrr = "always"
 
@@ -123,6 +124,7 @@ match.app_id = "^steam_app_[0-9]*$"
 default_focused = false 
 default_workspace = 2
 default_fullscreen = true
+default_floating = true
 hdr = "fullscreen"
 vrr = "always"
 
